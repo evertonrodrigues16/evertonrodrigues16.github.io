@@ -1,0 +1,77 @@
+.topo{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 460px;
+    background-attachment: fixed;
+}
+.logo{
+    font-family: 'Great Vibes', cursive;
+    font-size: 25px;
+}
+.titulo-section {
+    font-family: 'Great Vibes', cursive;
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+.pos-h1{
+    position: relative;
+    top: 40px;
+}
+.rodape{
+    position: relative;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    min-height: 100px;
+    background-color: #1f1f1f;
+    color: rgb(255, 255, 255);
+}
+.nossos-momentos, .nossos-padrinhos, .making-off, .blog, .lista-de-presentes, .single{
+    position: relative;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    min-height: 600px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+.nossa-historia, .dedicatoria, .manual-dos-padrinhos, .cerimonia, .contribua, .agenda, .single-agenda{
+    position: relative;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    min-height: 600px;
+    background-color: #2e2e2e;
+    color: rgb(255, 255, 255);
+}
+.home{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 140px;
+    background-color: #2e2e2e;
+    color: rgb(255, 255, 255);
+}
+.img-portfolio{
+    width: 50%;
+    height: 50%;
+}
+.titulo{
+    width: 500px;
+    height: 150px;
+    border-radius: 180px;
+    background-color: rgba(46, 46, 46, 0.5);
+    color: rgb(255, 255, 255);
+    position: absolute;
+    box-shadow: 1px 1px 1px #000;
+    margin-left: -250px;
+    left: 50%;
+    margin-top: 445px;
+    font-family: 'Great Vibes', cursive;
+    text-align: center;
+}
