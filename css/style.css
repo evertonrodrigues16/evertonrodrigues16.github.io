@@ -63,13 +63,21 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    min-height: 140px;
-    background-color: #2e2e2e;
-    color: rgb(255, 255, 255);
+    height: 20%;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
 }
 div.row.justify-content-center{
     margin: 0;
  }
+.titulo-home{
+    background-color: rgba(46, 46, 46, 0.5);
+    color: rgb(255, 255, 255);
+    font-family: 'Great Vibes', cursive;
+    border-radius: 180px;
+    max-width: 500px;
+ }
+
 /*.titulo{
     width: 500px;
     height: 150px;
