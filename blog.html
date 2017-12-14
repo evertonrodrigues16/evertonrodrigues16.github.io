@@ -12,8 +12,9 @@
         <link rel="stylesheet" href="jpagination/jpagination.min.css">
         <link href="lightbox2/src/css/lightbox.css" rel="stylesheet">        
     </head>
-    <body>
-        <header>
+    <body>        
+        <main>
+            <header class="bgParallax" data-speed="15">
                 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
                     <a class="navbar-brand logo" href="index.html"><i class="fas fa-heart"></i> Maria & João</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,18 +67,15 @@
                     </div>
                 </nav>
         </header>
-        <main>                
-            <section id="topo" class="topo bgParallax" data-speed="15">
-                <style>
-                    .topo{
-                        background: url("img/nosso-blog.jpg") no-repeat center top fixed;
-                        -webkit-background-size: cover;
-                        -moz-background-size: cover;
-                        -o-background-size: cover;
-                        background-size: cover;
-                    }
-                </style>
-            </section>
+            <style>
+                header{
+                    background: url("img/nosso-blog.jpg") no-repeat center top fixed;
+                    -webkit-background-size: cover;
+                    -moz-background-size: cover;
+                    -o-background-size: cover;
+                    background-size: cover;
+                }
+            </style>
             <section id="blog" class="blog">
                 <h1 class="titulo-section">
                     Blog<br>
@@ -85,7 +83,7 @@
                 </h1>
                 <div class="container pos-h1">                    
                     <div class="row  justify-content-center text-center">
-                        <div class="col-3 item">
+                        <div class="col-6 col-md-3 item">
                             <a href="single.html">
                                 <figure class="figure">
                                         <img src="img/b-1.jpg" class="img-fluid" alt="Responsive image">
@@ -96,7 +94,7 @@
                                 </figure>
                             </a>
                         </div>
-                        <div class="col-3 item">
+                        <div class="col-6 col-md-3 item">
                             <a href="single.html">
                                 <figure class="figure">
                                     <img src="img/b-2.jpg" class="img-fluid" alt="Responsive image">
@@ -107,7 +105,7 @@
                                 </figure>
                             </a>
                         </div>
-                        <div class="col-3 item">
+                        <div class="col-6 col-md-3 item">
                             <a href="single.html">
                                 <figure class="figure">
                                     <img src="img/b-3.jpg" class="img-fluid" alt="Responsive image">
@@ -118,7 +116,7 @@
                                 </figure>
                             </a>
                         </div>
-                        <div class="col-3 item">
+                        <div class="col-6 col-md-3 item">
                             <a href="single.html">
                                 <figure class="figure">
                                     <img src="img/b-4.jpg" class="img-fluid" alt="Responsive image">
@@ -133,51 +131,51 @@
                 </div>
                 <br>
                 <div class="row justify-content-center"><ul class = "pagination" id = "pagination"></ul></div>
-                <br>
+                <br><br>
             </section>
-        </main>
-        <footer>
-            <section id="rodape" class="rodape">
-                <br>
-                <div class="content">
-                    <div class="row justify-content-center">
-                        <div class="col-8 text-center">
-                            <p>Copyright © 2017 Sites Para Casamentos - Todos os direitos reservados</p>
-                            <p>Contato: 31 99271-6979 | evertonrodrigues16@yahoo.com.br</p>
-                            <p>facebook.com/sitesparacasamentos</p>
-                            <p>www.sitesparacasamentos.com.br</p>
+            <footer>
+                <section id="rodape" class="rodape">
+                    <br>
+                    <div class="content">
+                        <div class="row justify-content-center">
+                            <div class="col-8 text-center">
+                                <p>Copyright © 2017 Sites Para Casamentos - Todos os direitos reservados</p>
+                                <p>Contato: 31 99271-6979 | evertonrodrigues16@yahoo.com.br</p>
+                                <p>facebook.com/sitesparacasamentos</p>
+                                <p>www.sitesparacasamentos.com.br</p>
+                            </div>
                         </div>
-                    </div>
-                </div>                
-            </section>
-            <!-- Optional JavaScript -->
-            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-            <script
-            src="https://code.jquery.com/jquery-3.2.1.min.js"
-            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-            crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-            <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
-            <script src="jpagination/jpagination.js"></script>
-            <script src="lightbox2/src/js/lightbox.js"></script>
-            <script>
-                $('section.bgParallax').each(function(){
-                var $obj = $(this);
-
-                    $(window).scroll(function() {
-                        var yPos = -($(window).scrollTop() / $obj.data('speed')); 
-
-                        var bgpos = '50% '+ yPos + 'px';
-
-                        $obj.css('background-position', bgpos );
-
-                    }); 
-                });
-            </script>
-            <script>
-                jQuery(document).ready(function(){generate('pagination', 4, 8)});
-            </script>
-        </footer>
+                    </div>                
+                </section>
+                <!-- Optional JavaScript -->
+                <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                <script
+                src="https://code.jquery.com/jquery-3.2.1.min.js"
+                integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+                crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+                <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
+                <script src="jpagination/jpagination.js"></script>
+                <script src="lightbox2/src/js/lightbox.js"></script>
+                <script>
+                    $('header.bgParallax').each(function(){
+                    var $obj = $(this);
+    
+                        $(window).scroll(function() {
+                            var yPos = -($(window).scrollTop() / $obj.data('speed')); 
+    
+                            var bgpos = '50% '+ yPos + 'px';
+    
+                            $obj.css('background-position', bgpos );
+    
+                        }); 
+                    });
+                </script>
+                <script>
+                    jQuery(document).ready(function(){generate('pagination', 4, 8)});
+                </script>
+            </footer>
+        </main>        
     </body>
 </html>

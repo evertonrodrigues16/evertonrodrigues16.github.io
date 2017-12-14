@@ -1,14 +1,23 @@
-.topo{
+/*.topo{
     position: relative;
     top: 0;
     left: 0;
     width: 100%;
-    min-height: 460px;
+    min-height: 450px;
     background-attachment: fixed;
+    padding: 0;
+}*/
+html, body, main{ margin:0; height: 100%;width: 100%;}
+header{
+    background: url("img/love.jpg") no-repeat center top fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 70%;
 }
 .logo{
     font-family: 'Great Vibes', cursive;
-    font-size: 25px;
 }
 .titulo-section {
     font-family: 'Great Vibes', cursive;
@@ -43,6 +52,7 @@
     position: relative;
     top: 0px;
     left: 0;
+    right: 0;
     width: 100%;
     min-height: 600px;
     background-color: #2e2e2e;
@@ -57,14 +67,13 @@
     background-color: #2e2e2e;
     color: rgb(255, 255, 255);
 }
-.img-portfolio{
-    width: 50%;
-    height: 50%;
-}
-.titulo{
+div.row.justify-content-center{
+    margin: 0;
+ }
+/*.titulo{
     width: 500px;
     height: 150px;
-    border-radius: 180px;
+    border-radius: 500px;
     background-color: rgba(46, 46, 46, 0.5);
     color: rgb(255, 255, 255);
     position: absolute;
@@ -74,4 +83,4 @@
     margin-top: 445px;
     font-family: 'Great Vibes', cursive;
     text-align: center;
-}
+}*/

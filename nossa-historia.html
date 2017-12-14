@@ -10,9 +10,10 @@
         <link rel="stylesheet" href="css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
     </head>
-    <body>
-        <header>
-                <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <body>        
+        <main>
+            <header class="bgParallax" data-speed="15"></headerclass>>
+                <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
                     <a class="navbar-brand logo" href="index.html"><i class="fas fa-heart"></i> Maria & João</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -63,19 +64,16 @@
                         </ul>
                     </div>
                 </nav>
-        </header>
-        <main>                
-            <section id="topo" class="topo bgParallax" data-speed="15">
-                <style>
-                    .topo{
-                        background: url("img/love.jpg") no-repeat center top fixed;
-                        -webkit-background-size: cover;
-                        -moz-background-size: cover;
-                        -o-background-size: cover;
-                        background-size: cover;
-                    }
-                </style>
-            </section>
+            </header>
+            <style>
+                header{
+                    background: url("img/love.jpg") no-repeat center top fixed;
+                    -webkit-background-size: cover;
+                    -moz-background-size: cover;
+                    -o-background-size: cover;
+                    background-size: cover;
+                }
+            </style>
             <section id="nossa-historia" class="nossa-historia">
                 <h1 class="titulo-section">
                     Nossa História<br>
@@ -83,7 +81,7 @@
                 </h1>
                 <div class="container pos-h1">
                     <div class="row justify-content-center">
-                        <div class="col-6">
+                        <div class="col-12 col-md-6">
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed faucibus neque. Mauris a risus eget libero auctor interdum sed eget mi. Nam quis enim tempor, auctor mi sit amet, malesuada velit. Morbi molestie felis nec justo elementum, pulvinar lobortis magna iaculis. Proin vel molestie libero. Aliquam nec purus ut mauris aliquam fermentum. Sed ut felis eu augue luctus vulputate.
                             </p>
@@ -92,11 +90,13 @@
                             </p>
                             
                         </div>
-                        <img src="img/nossa-historia.jpg" class="img-fluid img-portfolio" alt="Responsive image">
+                        <div class="col-12 col-md-6">
+                            <img src="img/nossa-historia.jpg" class="img-fluid" alt="Responsive image">
+                        </div>
                     </div>
                 </div>
+                <br><br>
             </section>
-        </main>
         <footer>
             <section id="rodape" class="rodape">
                 <br>
@@ -118,7 +118,7 @@
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
             <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
             <script>
-                $('section.bgParallax').each(function(){
+                $('header.bgParallax').each(function(){
                 var $obj = $(this);
 
                     $(window).scroll(function() {
@@ -132,5 +132,6 @@
                 });
             </script>
         </footer>
+        </main>
     </body>
 </html>

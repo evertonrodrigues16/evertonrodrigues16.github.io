@@ -10,8 +10,9 @@
         <link rel="stylesheet" href="css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
     </head>
-    <body>
-        <header>
+    <body>        
+        <main>
+            <header class="bgParallax" data-speed="15">
                 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
                     <a class="navbar-brand logo" href="index.html"><i class="fas fa-heart"></i> Maria & João</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,19 +64,16 @@
                         </ul>
                     </div>
                 </nav>
-        </header>
-        <main>                
-            <section id="topo" class="topo bgParallax" data-speed="15">
-                <style>
-                    .topo{
-                        background: url("img/padrinhos.jpg") no-repeat center top fixed;
-                        -webkit-background-size: cover;
-                        -moz-background-size: cover;
-                        -o-background-size: cover;
-                        background-size: cover;
-                    }
-                </style>
-            </section>
+            </header>
+            <style>
+                header{
+                    background: url("img/padrinhos.jpg") no-repeat center top fixed;
+                    -webkit-background-size: cover;
+                    -moz-background-size: cover;
+                    -o-background-size: cover;
+                    background-size: cover;
+                }
+            </style>
             <section id="nossos-padrinhos" class="nossos-padrinhos">
                 <h1 class="titulo-section">
                     Nossos Padrinhos<br>
@@ -116,42 +114,43 @@
                         </div>
                     <br>
                 </div>
+                <br><br>
             </section>
-        </main>
-        <footer>
-            <section id="rodape" class="rodape">
-                <br>
-                <div class="content">
-                    <div class="row justify-content-center">
-                        <div class="col-8 text-center">
-                            <p>Copyright © 2017 Sites Para Casamentos - Todos os direitos reservados</p>
-                            <p>Contato: 31 99271-6979 | evertonrodrigues16@yahoo.com.br</p>
-                            <p>facebook.com/sitesparacasamentos</p>
-                            <p>www.sitesparacasamentos.com.br</p>
+            <footer>
+                <section id="rodape" class="rodape">
+                    <br>
+                    <div class="content">
+                        <div class="row justify-content-center">
+                            <div class="col-8 text-center">
+                                <p>Copyright © 2017 Sites Para Casamentos - Todos os direitos reservados</p>
+                                <p>Contato: 31 99271-6979 | evertonrodrigues16@yahoo.com.br</p>
+                                <p>facebook.com/sitesparacasamentos</p>
+                                <p>www.sitesparacasamentos.com.br</p>
+                            </div>
                         </div>
-                    </div>
-                </div>                
-            </section>
-            <!-- Optional JavaScript -->
-            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-            <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
-            <script>
-                $('section.bgParallax').each(function(){
-                var $obj = $(this);
-
-                    $(window).scroll(function() {
-                        var yPos = -($(window).scrollTop() / $obj.data('speed')); 
-
-                        var bgpos = '50% '+ yPos + 'px';
-
-                        $obj.css('background-position', bgpos );
-
-                    }); 
-                });
-            </script>
-        </footer>
+                    </div>                
+                </section>
+                <!-- Optional JavaScript -->
+                <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+                <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
+                <script>
+                    $('header.bgParallax').each(function(){
+                    var $obj = $(this);
+    
+                        $(window).scroll(function() {
+                            var yPos = -($(window).scrollTop() / $obj.data('speed')); 
+    
+                            var bgpos = '50% '+ yPos + 'px';
+    
+                            $obj.css('background-position', bgpos );
+    
+                        }); 
+                    });
+                </script>
+            </footer>
+        </main>        
     </body>
 </html>
